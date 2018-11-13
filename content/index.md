@@ -1,25 +1,18 @@
 ---
-title: "Min fina titel"
+title: "Om mig"
 ---
 Min me-sida i kursen design
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/index.md`.
+[FIGURE src="image/me-old.jpg?width=400" class="right" caption="Bild på mig för ett antal år sedan på resa till Taizé i Frankrike"]
 
-[FIGURE src="image/me.jpg?w=500" class="right" caption="Bild på mig"]
+Mitt namn är Christian Norrman och bor i Åhus, Skåne ungefär 1,7 mil utanför Kristianstad.
+Har bott här i princip hela mitt liv tills jag började plugga Datorsäkerhet på BTH i Karlskrona 2016 på höstterminen.
+Men efter första terminen så insåg jag att jag hade valt fel och ville istället plugga webbutveckling.
+Distansutbildining verkade bra för mig så jag sökte till olika webbprogrammerarlinjer men kom inte in förrens nu.
 
-Detta är min me-sida i kursen. Denna sidan innehåller en presentation av mig själv. Underhåll denna sidan under hela kursen och uppdatera den efter hand och behov.
+Första gången jag programmerade var på NTI-Gymnasiet i Kristianstad.
+Jag fick snabbt ett stort intresse av programmering och blev snabbt bättre än programmerings lärarna.
+Innan dess använde jag bara min dator för att spela datorspel och surfa på internet, kunde i princip like mycket om datorer som en vanlig svensson.
 
-Så, en presentation en bra början. Skriv några ord om dig själv. Jag börjar.
-
-Mitt namn är Mikael Roos. Född och uppvuxen i Bankeryd, Småland, strax utanför Jönköping, i ett villaområde som byggdes upp samtidigt som vi flyttade in där. Jag gillade landhockey och har spelat bandy och hockey samt gått bowlinggymnasiet i Nässjö. Jag har varit städare, diskare, kallskänka, servitör och kock. På ett bananskal landade jag i Ronneby när jag började högskolan 1990 där och nu är jag kvar med fru, barn och så vidare.
-
-Programmering har alltid intresserat mig sedan 13-årsåldern och min första dator var en Spectravideo 328 med bandspelare.
-
-Om jag skall nämna någon hobby, förutom webbprogrammering, så får det bli att bära sten på sommarstugetomten, och det finns sten så det räcker och blir över.
-
-Till och från får jag för mig att börja på lite hobbies, ett år satsade jag på pokerspel, ett annat år var det geocaching och sedan turfing. Nu ligger jag lågt med hobbies, men något kanske dyker upp...?
-
-Vi syns och hörs i forum och chatt!
-
-/Mikael
+Vi syns säkert i forumet eller i chatten ibland!
