@@ -19,10 +19,8 @@ views:
 Om
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/om.md`.
+I denna kursen ska vi gå igenom hur vi designar en hemsida med olika verktyg.
+Så kursen fokuserar mer på att designa elementen på sidan med LESS & Markdown.
+Även om hur vi använder verktygen Anax & Git.
 
-Skriv några kloka ord om kursen?
-
-Lägg till en representativ bild för kursen, enligt ditt egna val.
-
-[FIGURE src=image/car.png?w=300 caption="En fin bil som demobild."]
+[FIGURE src=image/less.png?w=200 caption="LESS logotyp"]
