@@ -19,6 +19,7 @@
 
 /* Main styles */
 * {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -34,6 +35,7 @@ body {
     background-color: #fff;
     padding: 0;
     margin: 0 auto;
+    -webkit-box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.2);
 }
 
@@ -92,6 +94,7 @@ h1 {
 .region-flash {
     height: 100%;
     overflow: hidden;
+    -webkit-box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2)
 }
 
@@ -107,22 +110,31 @@ h1 {
 
 /* Header styles */
 .region-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background: #3948aa;
 }
 
 @media screen and (max-width: 880px) {
     .region-header {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 }
 
 .region-header-col-1 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 auto;
     flex: 0 auto;
     padding: 0 2em 1em 0.5em;
 }
 
 .region-header-col-2 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     padding: 0.5em 0;
 }
@@ -139,6 +151,8 @@ h1 {
     font-size: 1.2em;
     padding: 0.3em 1.5em 0.2em;
     text-decoration: none;
+    -webkit-transition: color 200ms ease;
+    -o-transition: color 200ms ease;
     transition: color 200ms ease;
 }
 
@@ -152,7 +166,10 @@ h1 {
     background-color: #3f51b5;
     border-radius: 0.2em;
     border-bottom: 4px solid #3f51b5;
+    -webkit-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
     transition: all 400ms ease;
+    -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
 }
 
@@ -173,7 +190,6 @@ h1 {
     display: block;
     margin: 0.2em 0;
     font-size: 1em;
-    /* box-shadow: none; */
 }
 
 
@@ -204,10 +220,14 @@ h1 {
 }
 
 .footer-column-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .footer-column {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     padding: 1em 2em;
     border-right: 1px solid #fff;
@@ -226,14 +246,20 @@ h1 {
 
 /* Sidebars */
 .inner-wrap-main .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .region-main.has-sidebar {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
 }
 
 .wrap-sidebar {
+    -webkit-box-flex: 0;
+    -ms-flex: 0;
     flex: 0;
     min-width: 300px;
     margin-top: 2em;
@@ -254,6 +280,7 @@ h1 {
     background: #3948aa;
     color: white;
     border: 1px solid #3948aa;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
