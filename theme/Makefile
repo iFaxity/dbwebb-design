@@ -260,7 +260,7 @@ less-lint: $(LESS_LINT)
 
 $(BUILD)/less/css/%.css: $(SOURCE)/%.less
 	@$(call ACTION_MESSAGE,$< -> $@)
-	$(LESSC) $< $@
+	$(LESSC) --autoprefix="last 4 versions" $< $@
 
 $(BUILD)/less/css/%.min.css: $(SOURCE)/%.less
 	@$(call ACTION_MESSAGE,$< -> $@)
