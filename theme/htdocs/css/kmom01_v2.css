@@ -326,45 +326,9 @@ ul.toc li.section-header {
  * Base style to affect HTML elements on a general scale.
  */
 /**
- * Base style to affect HTML elements on a general scale.
- */
-html {
-  overflow-y: scroll;
-  background-color: #424242;
-}
-body {
-  margin: 0;
-  padding: 0;
-  color: #333;
-  background-color: #fff;
-  font: 100.01%/1 serif;
-}
-/**
  * Layout style for general structure of header, navbar, main, footer
  * and other regions of the page including route specific styles.
  */
-/**
- * Layout style for general structure of header, navbar, main, footer
- * and other regions of the page including route specific styles.
- */
-/**
- * Variables
- */
-/**
- * General layout
- */
-.inner-wrap {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-/**
- * Layout for responsive style through media queries.
- */
-@media screen and (max-width: 1500px) {
-  .site-logo {
-    display: none;
-  }
-}
 /**
  * My own settings, not currently in their own module.
  */
