@@ -16,3 +16,20 @@ v1.0.0 (2018-11-14)
 * Added footer content
 * Created initial style for webpage
 * Added presentation for this course moment
+
+v2.0.0 (2018-11-20)
+-------------------
+* Created theme folder with dependencies
+* Added kmom01 theme module
+* Added LESS theme modules
+* Added kmom01_v2 theme
+* Added kmom02 theme
+* Added less-autoprefixer package
+* Changed theme styles
+* Changed default stylesheet to kmom02
+* Added built theme files
+
+v2.0.1 (2018-11-20)
+-------------------
+* Updated changelog
+* Fixed kmom01_v2 stylesheet
