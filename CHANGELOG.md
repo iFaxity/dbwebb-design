@@ -33,3 +33,7 @@ v2.0.1 (2018-11-20)
 -------------------
 * Updated changelog
 * Fixed kmom01_v2 stylesheet
+
+v2.0.2 (2018-11-21)
+-------------------
+* Added presentation for kmom02
