@@ -47,3 +47,7 @@ v3.0.0 (2018-11-29)
 * Added less files for kmom03
 * Added built htdocs files
 * Added presentation for kmom03
+
+v3.0.1 (2018-11-29)
+-------------------
+* Minor fix in styles
