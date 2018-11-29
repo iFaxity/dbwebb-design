@@ -1,0 +1,59 @@
+/**
+ * Show off the regions used in the website, to ease styling.
+ */
+
+.outer-wrap-footer,
+.outer-wrap-header {
+    background: @primaryColor;
+}
+
+.region {
+    /* Flash styles */
+    &-flash {
+        overflow: hidden;
+        box-shadow: 0 6px 6px @shadowColor;
+    
+        img {
+            display: block;
+            max-width: 100%;
+            min-width: 650px;
+            max-height: 200px;
+            min-height: 150px;
+        }
+    }
+
+    /* Header styles */
+    &-header {
+        display: flex;
+
+        @media (max-width: 895px) {
+            flex-direction: column;
+        }
+    }
+
+    /* Main region */
+    &-main {
+        min-height: 30em;
+        margin-top: -1px;
+    }
+
+    &-sidebar-right {
+        margin-top: 10px;
+    }
+
+    /* Footer region */
+    &-footer {
+        color: @textColorOnPrimary;
+        padding: 1em 0;
+
+        a {
+            color: white;
+            text-decoration: underline;
+
+            &:hover {
+                color: @secondaryColor;
+                text-decoration: underline;
+            }
+        }
+    }
+}

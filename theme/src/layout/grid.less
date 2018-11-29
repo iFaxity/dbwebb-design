@@ -1,0 +1,122 @@
+@import '@desinax/vertical-grid/less/grid.less';
+@columnWidth: 30;
+@gutterWidth: 10;
+@columns:     24;
+@gridType:    'flex';
+
+.vgrid .inner-wrap {
+    @gridImage: '../img/theme/grid950x24x30x10-nomargin.png';
+    #desinax-vgrid.showGrid(@gridImage, 1150px);
+
+    /* Make it so you can see the vertical grid behind the regions */
+    .row > * {
+      opacity: 0.9;
+    }
+}
+
+// Define the inner wraps as a grid and each row as a flex row
+.inner-wrap {
+  #desinax-vgrid.grid(1150px);
+  margin-bottom: (@columns / 2) * 1px;
+}
+
+.row {
+  #desinax-vgrid.row();
+}
+
+
+// Define the grid columns
+.region {
+  &-header {
+    #desinax-vgrid.column(@columns);
+
+    &-col-1 {
+      #desinax-vgrid.column(6);
+      @media (max-width: 680px) {
+        #desinax-vgrid.column(@columns / 2);
+      }
+    }
+
+    &-col-2 {
+      #desinax-vgrid.column(18);
+
+      @media (max-width: 895px) {
+        #desinax-vgrid.column(@columns);
+      }
+
+      @media (max-width: 680px) {
+        width: 0;
+      }
+    }
+
+    &-col-3 {
+      width: 0;
+      @media (max-width: 680px) {
+        #desinax-vgrid.column(@columns / 2);
+      }
+    }
+  }
+
+  &-flash {
+    #desinax-vgrid.column(@columns - 4);
+    #desinax-vgrid.push(2);
+  }
+
+  &-breadcrumb {
+    #desinax-vgrid.column(@columns - 2);
+    #desinax-vgrid.push(1);
+  }
+
+  &-main {
+    #desinax-vgrid.column(@columns - 2);
+    #desinax-vgrid.push(1);
+
+    &.has-sidebar {
+      #desinax-vgrid.column(@columns / 1.5 - 1);
+      #desinax-vgrid.push(1);
+
+      @media (max-width: 895px) {
+        #desinax-vgrid.column(@columns - 2);
+        #desinax-vgrid.push(1);
+      }
+    }
+  }
+  
+  &-sidebar {
+    &-left,
+    &-right {
+      #desinax-vgrid.column(@columns / 4);
+      #desinax-vgrid.push(1);
+
+      @media (max-width: 895px) {
+        #desinax-vgrid.column(@columns - 2);
+        #desinax-vgrid.push(1);
+      }
+    }
+  }
+
+  &-footer {
+    #desinax-vgrid.column(@columns);
+  }
+}
+
+.footer-column {
+    #desinax-vgrid.column((@columns - 6) / 3);
+
+    &:first-of-type {
+      #desinax-vgrid.push(3);
+    }
+
+    @media (max-width: 680px) {
+      #desinax-vgrid.column(@columns);
+
+      &:first-of-type {
+        #desinax-vgrid.push(0);
+      }
+    }
+}
+
+.site-footer {
+  #desinax-vgrid.column(@columns - 2);
+  #desinax-vgrid.push(1);
+}
