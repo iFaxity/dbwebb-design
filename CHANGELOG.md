@@ -29,6 +29,7 @@ v2.0.0 (2018-11-20)
 * Changed default stylesheet to kmom02
 * Added built theme files
 
+
 v2.0.1 (2018-11-20)
 -------------------
 * Updated changelog
@@ -37,3 +38,12 @@ v2.0.1 (2018-11-20)
 v2.0.2 (2018-11-21)
 -------------------
 * Added presentation for kmom02
+
+
+v3.0.0 (2018-11-29)
+-------------------
+* Changed default stylesheet to kmom03
+* Added kmom03.less
+* Added less files for kmom03
+* Added built htdocs files
+* Added presentation for kmom03
