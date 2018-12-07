@@ -1,4 +1,9 @@
+// Vertical grid mixin
 @import '@desinax/vertical-grid/less/grid.less';
+
+/**
+ * Variables to overwrite the grid variables
+ */
 @columnWidth: 30;
 @gutterWidth: 10;
 @columns:     24;
@@ -14,7 +19,7 @@
     }
 }
 
-// Define the inner wraps as a grid and each row as a flex row
+
 .inner-wrap {
   #desinax-vgrid.grid(1150px);
   margin-bottom: (@columns / 2) * 1px;
@@ -25,18 +30,15 @@
 }
 
 
-// Define the grid columns
 .region {
   &-header {
     #desinax-vgrid.column(@columns);
-
     &-col-1 {
       #desinax-vgrid.column(6);
       @media (max-width: 680px) {
         #desinax-vgrid.column(@columns / 2);
       }
     }
-
     &-col-2 {
       #desinax-vgrid.column(18);
 
@@ -48,7 +50,6 @@
         width: 0;
       }
     }
-
     &-col-3 {
       width: 0;
       @media (max-width: 680px) {
@@ -119,4 +120,44 @@
 .site-footer {
   #desinax-vgrid.column(@columns - 2);
   #desinax-vgrid.push(1);
+}
+
+
+
+
+
+@import '@desinax/typographic-grid/less/typography-font-families.less';
+@import '@desinax/typographic-grid/less/typography-defaults.less';
+
+@magicNumber:  24px;
+@fontSizeBody: 16px;
+// Set font family to use
+@fontFamilyHeadings:  @fontFamilyCambria;
+@fontFamilyBody:      'Helvetica', 'Verdana', 'Arial', 'sans-serif';
+@fontFamilyCode:      @fontFamilyCourier;
+
+// Activate the grid base font
+body {
+  #desinax-hgrid.font(@fontSizeBody);
+}
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();
+
+p {
+  margin-top: 12px;
+}
+
+// Show the grid
+.hgrid .inner-wrap {
+  @gridImage: '../img/theme/magic-number-24.png';
+  #desinax-hgrid.showGrid(@gridImage);
+
+  .region-footer {
+    color: #000;
+  }
+
+  .region-footer a {
+    color: #3948aa;
+  }
 }
