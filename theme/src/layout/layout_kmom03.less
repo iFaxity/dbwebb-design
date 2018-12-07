@@ -74,7 +74,7 @@
 
             a {
                 display: block;
-                color: @textColorOnPrimary;
+                color: darken(@textColorOnPrimary, 5%);
                 font-size: 1.1em;
                 padding: 0.3em 1.5em 0.1em;
                 text-decoration: none;
@@ -82,7 +82,7 @@
             }
 
             &:hover > a {
-                color: darken(@textColorOnPrimary, 10%);
+                color: @textColorOnPrimary;
             }
 
             & > ul{
@@ -262,14 +262,17 @@
 
     li {
         display: inline-block;
-        content: '»';
+    }
+
+    li::after {
+        display: inline-block;
+        content: '\00bb';
         margin-left: 0.2em;
     }
 }
 
 .next-previous {
-    height: 1em;
-    margin-bottom: -1em;
+    margin-bottom: @magicNumber / 2;
 
     .prev {
         float: left;
