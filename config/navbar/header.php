@@ -35,8 +35,27 @@ return [
                         "url" => "redovisning/kmom03",
                         "title" => "Redovisning för kmom03.",
                     ],
+                    [
+                        "text" => "Kmom04",
+                        "url" => "redovisning/kmom04",
+                        "title" => "Redovisning för kmom04.",
+                    ],
                 ],
             ],
+        ],
+        [
+            "text" => "Rapport",
+            "url" => "rapport",
+            "title" => "Rapport om webbplatser.",
+            "submenu" => [
+                "items" => [
+                    [
+                        "text" => "Färgschema & känsla",
+                        "url" => "rapport/fargschema",
+                        "title" => "Rapport för färgschema & känsla",
+                    ],
+                ]
+            ]
         ],
         [
             "text" => "Om",
