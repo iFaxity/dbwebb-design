@@ -1,0 +1,33 @@
+/*!
+ * Dark theme for kmom04.
+ */
+
+@import 'kmom04.less';
+
+// Lazy loading variables
+@primaryColor: #232323;
+@secondaryColor: #d71a60;
+
+@textColor: #fff;
+@textColorOnPrimary: #fff;
+@textColorOnSecondary: #fff;
+
+@linkColor: @secondaryColor;
+@linkHoverColor: lighten(@linkColor, 20%);
+
+@bgColor: #1c1c1c;
+@bodyBgColor: #121212;
+@shadowColor: fade(#616161, 20%);
+
+// Required for dark themes to play nice with the code blocks
+code, samp {
+  background-color: @primaryColor;
+  border: @bodyBgColor;
+}
+
+// Makes byline a bit more noticable
+.byline {
+  background-color: @bgColor;
+}
+
+
