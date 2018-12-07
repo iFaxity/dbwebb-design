@@ -1,7 +1,10 @@
 /*!
- * Stylesheet for design kmom03.
+ * Dark theme for kmom04.
+ */
+/*!
+ * Stylesheet for design kmom04.
  *
- * This stylesheet is for the design course and kmom03 where we use LESS.
+ * This stylesheet is for the design course and kmom04 where we use LESS.
  */
 /**
  * Normalize and reset the style.
@@ -317,7 +320,7 @@ template {
 }
 /**
  * A responsive menu.
- */
+*/
 /**
  * Style for responsive menu
  */
@@ -591,26 +594,26 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 html {
   overflow: hidden scroll;
-  color: #000;
-  background-color: #dae3e7;
+  color: #fff;
+  background-color: #1c1c1c;
 }
 body {
   max-width: 1150px;
-  background-color: #fff;
+  background-color: #121212;
   padding: 0;
   margin: 0 auto;
-  -webkit-box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 6px 3px rgba(97, 97, 97, 0.2);
+          box-shadow: 0 0 6px 3px rgba(97, 97, 97, 0.2);
 }
 p {
   margin-top: 12px;
 }
 a {
-  color: #3948aa;
+  color: #d71a60;
   text-decoration: none;
 }
 a:hover {
-  color: #d71a60;
+  color: #ed6a9b;
 }
 /**
  * Horizontal grid
@@ -952,6 +955,9 @@ hr::after {
   color: #3948aa;
 }
 /**
+ * Base variable overrides
+ */
+/**
  * Layout style for general structure of header, navbar, main, footer
  * and other regions of the page including route specific styles.
  */
@@ -1244,8 +1250,8 @@ hr::after {
 .rm-navbar .rm-default li {
   display: inline-block;
   margin: 0.2em 0;
-  background-color: #3f50bd;
-  border-bottom: 4px solid #3f50bd;
+  background-color: #303030;
+  border-bottom: 4px solid #303030;
   border-radius: 0.2em;
   -webkit-transition: all 400ms ease;
   -o-transition: all 400ms ease;
@@ -1275,7 +1281,7 @@ hr::after {
   font-size: 1em;
 }
 .rm-navbar .rm-mobile {
-  background: #3948aa;
+  background: #232323;
   /* Hide submenu item in navbar */
 }
 .rm-navbar .rm-mobile li {
@@ -1298,7 +1304,7 @@ hr::after {
   border-radius: 0;
 }
 .rm-navbar .rm-mobile .rm-submenu-button:hover {
-  background-color: #3f50bd;
+  background-color: #303030;
 }
 .rm-navbar .rm-desktop {
   padding: 0.5em 0;
@@ -1369,11 +1375,11 @@ hr::after {
   padding: 0.1em 1em;
   margin: 0 0 22px;
   font-size: 1.2em;
-  background: #3948aa;
+  background: #232323;
   color: #fff;
-  border: 1px solid #3948aa;
-  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  border: 1px solid #232323;
+  -webkit-box-shadow: 0 2px 2px rgba(97, 97, 97, 0.2);
+          box-shadow: 0 2px 2px rgba(97, 97, 97, 0.2);
 }
 /* Byline */
 .byline {
@@ -1386,8 +1392,8 @@ hr::after {
   max-width: 500px;
   padding: 10px 1em;
   margin: 48px 0;
-  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 2px 3px rgba(97, 97, 97, 0.2);
+          box-shadow: 0 2px 3px rgba(97, 97, 97, 0.2);
 }
 .byline__content {
   -webkit-box-flex: 1;
@@ -1458,7 +1464,7 @@ hr::after {
  */
 .outer-wrap-footer,
 .outer-wrap-header {
-  background: #3948aa;
+  background: #232323;
 }
 .region {
   /* Flash styles */
@@ -1468,8 +1474,8 @@ hr::after {
 }
 .region-flash {
   overflow: hidden;
-  -webkit-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 6px 6px rgba(97, 97, 97, 0.2);
+          box-shadow: 0 6px 6px rgba(97, 97, 97, 0.2);
 }
 .region-flash img {
   display: block;
@@ -5555,3 +5561,23 @@ hr::after {
 /**
  * My own settings, not currently in their own module.
  */
+.color-scheme {
+  overflow: auto;
+}
+.color-scheme__content {
+  display: inline-block;
+  border: 1px solid #ddd;
+}
+.color-scheme__content span {
+  float: left;
+  width: 50px;
+  height: 100px;
+}
+code,
+samp {
+  background-color: #232323;
+  border: #121212;
+}
+.byline {
+  background-color: #1c1c1c;
+}

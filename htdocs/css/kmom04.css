@@ -1,7 +1,7 @@
 /*!
- * Stylesheet for design kmom03.
+ * Stylesheet for design kmom04.
  *
- * This stylesheet is for the design course and kmom03 where we use LESS.
+ * This stylesheet is for the design course and kmom04 where we use LESS.
  */
 /**
  * Normalize and reset the style.
@@ -317,7 +317,7 @@ template {
 }
 /**
  * A responsive menu.
- */
+*/
 /**
  * Style for responsive menu
  */
@@ -951,6 +951,9 @@ hr::after {
 .hgrid .inner-wrap .region-footer a {
   color: #3948aa;
 }
+/**
+ * Base variable overrides
+ */
 /**
  * Layout style for general structure of header, navbar, main, footer
  * and other regions of the page including route specific styles.
@@ -5555,3 +5558,15 @@ hr::after {
 /**
  * My own settings, not currently in their own module.
  */
+.color-scheme {
+  overflow: auto;
+}
+.color-scheme__content {
+  display: inline-block;
+  border: 1px solid #ddd;
+}
+.color-scheme__content span {
+  float: left;
+  width: 50px;
+  height: 100px;
+}
