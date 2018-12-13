@@ -56,3 +56,21 @@ v3.0.2 (2018-11-29)
 -------------------
 * Added kmom03 presentation in navbar
 
+
+v4.0.0 (2018-12-07)
+-------------------
+* Added kmom04.less
+* Added color themes
+* Updated header & default styles
+* Fix: forgot to add correct vgrid file in kmom03
+* Changed theme files for variables
+* Added screenshots for report
+* Added report
+* Added kmom04 presentation
+* Changed tool pages
+
+v4.0.1 (2018-12-07)
+-------------------
+* Updated changelog
+
+
