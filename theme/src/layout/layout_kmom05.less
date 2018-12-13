@@ -1,0 +1,293 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * General layout
+ */
+
+.color-scheme {
+  overflow: auto;
+
+  &__content {
+    display: inline-block;
+    border: 1px solid #ddd;
+
+    span {
+      float: left;
+      width: 50px;
+      height: 100px;
+    }
+  }
+}
+
+// Enable style from the module and optinally add customized layout
+@maxContentWidth: 900px;
+figure {
+  &.figure {
+    #desinax-figure.figure(@maxContentWidth);
+  }
+
+  &.asciinema {
+    &:extend(figure.figure);
+    #desinax-figure.asciinema();
+  }
+
+  &.codepen,
+  &.figure-codepen {
+    &:extend(figure.figure);
+    #desinax-figure.codepen();
+  }
+}
+
+/* Disable large site logo for now */
+.site-logo {
+  display: none;
+
+  &-text {
+      font-size: 2em;
+      font-weight: bold;
+      padding: 0 2em 0 .5em;
+
+      a {
+          color: #fff;
+          text-decoration: none;
+      }
+  }
+}
+
+/* Navbar styles */
+#rm-menu-button {
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.rm-navbar {
+  // All navbars
+  .rm-default {
+      ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+      }
+
+      li {
+          display: inline-block;
+          margin: 0.2em 0;
+          background-color: lighten(@primaryColor, 5%);
+          border-bottom: 4px solid lighten(@primaryColor, 5%);
+          border-radius: 0.2em;
+          transition: all 400ms ease;
+          box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
+
+          a {
+              display: block;
+              color: darken(@textColorOnPrimary, 5%);
+              font-size: 1.1em;
+              padding: 0.3em 1.5em 0.1em;
+              text-decoration: none;
+              transition: color 200ms ease;
+          }
+
+          &:hover > a {
+              color: @textColorOnPrimary;
+          }
+
+          & > ul{
+              padding-top: 0.6em;
+
+              & > li {
+                  display: block;
+                  margin: 0.2em 0;
+                  font-size: 1em;
+              }
+          }
+      }
+  }
+
+  // Mobile navbar
+  .rm-mobile {
+      background: @primaryColor;
+
+      li {
+          display: block;
+          margin: 0.5em 0;
+
+          a:hover {
+              text-decoration: none;
+          }
+      }
+
+      .rm-show-submenu li:hover {
+          border-bottom-color: @secondaryColor;
+      }
+
+      /* Hide submenu item in navbar */
+      .rm-submenu-button {
+          position: static;
+          box-shadow: none;
+          background-color: initial;
+          padding: 0.3em 1.5em;
+          margin: 0;
+          border-radius: 0;
+
+          &:hover {
+              background-color: lighten(@primaryColor, 5%);
+          }
+      }
+  }
+
+  // Desktop navbar
+  .rm-desktop {
+      padding: 0.5em 0;
+
+      ul {
+          background: none;
+      }
+
+      /* Hide submenu item in navbar */
+      .rm-submenu-button {
+          display: none !important;
+      }
+
+      li:hover {
+          border-bottom-color: @secondaryColor;
+
+          & > ul {
+              position: absolute;
+              display: block;
+          }
+      }
+  }
+}
+
+
+/* Footer styles */
+.footer-column {
+  padding: 1em;
+  margin-top: -7px;
+  border-right: 1px solid #fff;
+
+  &:last-of-type {
+      border-right: none;
+  }
+
+  h4 {
+      margin-top: 0;
+      font-size: 1.4em;
+  }
+
+  &-wrapper {
+      display: flex;
+  }
+
+  @media (max-width: 680px) {
+      border-right: none;
+
+      &-wrapper {
+          flex-direction: column;
+      }
+  }
+}
+
+/* Sidebar wrapper */
+.wrap-sidebar {
+  .block {
+      margin-bottom: @magicNumber;
+
+      /* Table of Contents */
+      ul.toc {
+          list-style: none;
+          padding: 0 1em;
+
+          li {
+              font-size: 15px;
+              line-height: @magicNumber;
+              margin-top: 0;
+
+              &.section-header {
+                  line-height: @magicNumber;
+                  font-size: 18px;
+                  font-weight: bold;
+              }
+          }
+      }
+  }
+
+  h4 {
+      padding: 0.1em 1em;
+      margin: 0 0 22px;
+      font-size: 1.2em;
+      background: @primaryColor;
+      color: @textColorOnPrimary;
+      border: 1px solid @primaryColor;
+      box-shadow: 0 2px 2px @shadowColor;
+  }
+}
+
+
+/* Byline */
+.byline {
+  display: flex;
+  align-items: flex-start;
+  max-width: 500px;
+  padding: 10px 1em;
+  margin: 48px 0;
+  box-shadow: 0 2px 3px @shadowColor;
+
+  &__content {
+      flex: 1;
+      margin-left: 1em;
+  }
+
+  &__figure {
+      flex: 0;
+      margin: auto 0;
+
+      img {
+          height: 100px;
+          margin: 0 1em;
+      }
+
+      figcaption {
+          font-style: italic;
+          text-align: center;
+
+          p {
+              margin-top: 12px;
+          }
+      }
+  }
+}
+
+/* Component styles */
+.breadcrumb-list {
+  ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
+
+  li {
+      display: inline-block;
+  }
+
+  li::after {
+      display: inline-block;
+      content: '\00bb';
+      margin-left: 0.2em;
+  }
+}
+
+.next-previous {
+  margin-bottom: @magicNumber / 2;
+
+  .prev {
+      float: left;
+  }
+
+  .next {
+      float: right;
+  }
+}
