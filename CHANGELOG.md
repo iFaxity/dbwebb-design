@@ -74,3 +74,14 @@ v4.0.1 (2018-12-07)
 * Updated changelog
 
 
+v5.0.0 (2018-12-13)
+-------------------
+* Added presentation for kmom05 - Christian Norrman (HEAD -> master)
+* Updated package.json - Christian Norrman
+* Added built kmom05 theme - Christian Norrman
+* Added built theme files - Christian Norrman
+* Added report about website loading speed - Christian Norrman
+* Added screenshots for report - Christian Norrman
+* Added kmom05 styles - Christian Norrman
+* Updated @desinax/figure - Christian Norrman
+* Updated changelog
