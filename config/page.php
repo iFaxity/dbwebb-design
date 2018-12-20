@@ -19,14 +19,14 @@ return [
             "lang" => "sv",
             "stylesheets" => [
                 // Change here to set another default stylesheet
-                "css/kmom05.css",
+                //"css/kmom06-designelement.min.css",
+                "css/kmom06-designprinciper.min.css",
             ],
             "javascripts" => [
                 "js/responsive-menu.js",
             ],
         ],
     ],
-
     // These views are always loaded into the collection of views.
     "views" => [
         [
