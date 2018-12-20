@@ -1,10 +1,7 @@
 /*!
- * Colorful theme for kmom04.
- */
-/*!
- * Stylesheet for design kmom04.
+ * Stylesheet for design kmom06-designelement.
  *
- * This stylesheet is for the design course and kmom04 where we use LESS.
+ * This stylesheet is for the design course and kmom06 where we use LESS.
  */
 /**
  * Normalize and reset the style.
@@ -595,7 +592,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 html {
   overflow: hidden scroll;
   color: #000;
-  background-color: #b3e5fc;
+  background-color: #e6e6e6;
 }
 body {
   max-width: 1150px;
@@ -609,11 +606,11 @@ p {
   margin-top: 12px;
 }
 a {
-  color: #d81b60;
+  color: #9c27b0;
   text-decoration: none;
 }
 a:hover {
-  color: #26a69a;
+  color: #abc205;
 }
 /**
  * Horizontal grid
@@ -652,7 +649,7 @@ a:hover {
      */
 }
 body {
-  font: 16px/1.5 sans-serif;
+  font: 16px/1.5 'Helvetica', 'Verdana', 'Arial', 'sans-serif';
 }
 h1,
 h2,
@@ -660,7 +657,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: fantasy;
+  font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -785,7 +782,7 @@ code,
 kbd,
 samp,
 .code {
-  font-family: monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 code,
 samp {
@@ -954,9 +951,6 @@ hr::after {
 .hgrid .inner-wrap .region-footer a {
   color: #3948aa;
 }
-/**
- * Base variable overrides
- */
 /**
  * Layout style for general structure of header, navbar, main, footer
  * and other regions of the page including route specific styles.
@@ -1201,7 +1195,7 @@ hr::after {
   margin-left: 4.6875%;
 }
 body {
-  font: 16px/1.5 sans-serif;
+  font: 16px/1.5 'Helvetica', 'Verdana', 'Arial', 'sans-serif';
 }
 h1,
 h2,
@@ -1209,7 +1203,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: fantasy;
+  font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -1334,7 +1328,7 @@ code,
 kbd,
 samp,
 .code {
-  font-family: monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 code,
 samp {
@@ -1513,25 +1507,133 @@ p {
 /**
  * General layout
  */
-.figure {
+.color-scheme {
+  overflow: auto;
+}
+.color-scheme__content {
+  display: inline-block;
+  border: 1px solid #ddd;
+}
+.color-scheme__content span {
+  float: left;
+  width: 50px;
+  height: 100px;
+}
+figure.figure,
+figure.asciinema,
+figure.codepen,
+figure.figure-codepen {
+  display: table;
+  padding: 0;
   margin: 0;
+  margin-bottom: 24px;
+  /* Chrome shinks images in td */
+  /* Position the images */
 }
-.figure iframe {
+figure.figure img {
   max-width: 100%;
-}
-@media (min-width: 881px) {
-  .figure.right {
-    float: right;
-  }
-  .figure.left {
-    float: left;
-  }
-}
-/* Makes images responsive */
-.article img,
-.figure img {
   display: block;
-  max-width: 100%;
+}
+figure.figure figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  padding-top: 12px;
+}
+figure.figure figcaption p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
+}
+figure.figure td img {
+  max-width: none;
+}
+figure.figure.center {
+  clear: both;
+  margin: auto;
+}
+figure.figure.center figcaption {
+  text-align: center;
+}
+figure.figure.left {
+  float: left;
+  margin-right: 0.5em;
+}
+figure.figure.right {
+  float: right;
+  margin-left: 0.5em;
+}
+@media screen and (max-width: 788px) {
+  figure.figure.left.w67,
+  figure.figure.right.w67 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w67 img,
+  figure.figure.right.w67 img {
+    width: 787.5px;
+  }
+}
+@media screen and (max-width: 600px) {
+  figure.figure.left.w50,
+  figure.figure.right.w50 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w50 img,
+  figure.figure.right.w50 img {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 563px) {
+  figure.figure.left.w40,
+  figure.figure.right.w40 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w40 img,
+  figure.figure.right.w40 img {
+    width: 562.5px;
+  }
+}
+@media screen and (max-width: 450px) {
+  figure.figure.left.w33,
+  figure.figure.right.w33 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w33 img,
+  figure.figure.right.w33 img {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 300px) {
+  figure.figure.left.w25,
+  figure.figure.right.w25 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w25 img,
+  figure.figure.right.w25 img {
+    width: 300px;
+  }
+}
+figure.asciinema {
+  display: block;
+}
+figure.asciinema figcaption {
+  display: block;
+}
+figure.asciinema .asciicast {
+  margin: 0 !important;
+}
+figure.codepen,
+figure.figure-codepen {
+  width: 100%;
 }
 /* Disable large site logo for now */
 .site-logo {
@@ -1559,8 +1661,8 @@ p {
 .rm-navbar .rm-default li {
   display: inline-block;
   margin: 0.2em 0;
-  background-color: #2bbbad;
-  border-bottom: 4px solid #2bbbad;
+  background-color: #af2cc5;
+  border-bottom: 4px solid #af2cc5;
   border-radius: 0.2em;
   -webkit-transition: all 400ms ease;
   -o-transition: all 400ms ease;
@@ -1590,7 +1692,7 @@ p {
   font-size: 1em;
 }
 .rm-navbar .rm-mobile {
-  background: #26a69a;
+  background: #9c27b0;
   /* Hide submenu item in navbar */
 }
 .rm-navbar .rm-mobile li {
@@ -1601,7 +1703,7 @@ p {
   text-decoration: none;
 }
 .rm-navbar .rm-mobile .rm-show-submenu li:hover {
-  border-bottom-color: #d81b60;
+  border-bottom-color: #e2fa33;
 }
 .rm-navbar .rm-mobile .rm-submenu-button {
   position: static;
@@ -1613,7 +1715,7 @@ p {
   border-radius: 0;
 }
 .rm-navbar .rm-mobile .rm-submenu-button:hover {
-  background-color: #2bbbad;
+  background-color: #af2cc5;
 }
 .rm-navbar .rm-desktop {
   padding: 0.5em 0;
@@ -1626,7 +1728,7 @@ p {
   display: none !important;
 }
 .rm-navbar .rm-desktop li:hover {
-  border-bottom-color: #d81b60;
+  border-bottom-color: #e2fa33;
 }
 .rm-navbar .rm-desktop li:hover > ul {
   position: absolute;
@@ -1684,9 +1786,9 @@ p {
   padding: 0.1em 1em;
   margin: 0 0 22px;
   font-size: 1.2em;
-  background: #26a69a;
+  background: #9c27b0;
   color: #fff;
-  border: 1px solid #26a69a;
+  border: 1px solid #9c27b0;
   -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
@@ -1773,7 +1875,7 @@ p {
  */
 .outer-wrap-footer,
 .outer-wrap-header {
-  background: #26a69a;
+  background: #9c27b0;
 }
 .region {
   /* Flash styles */
@@ -1825,7 +1927,7 @@ p {
   text-decoration: underline;
 }
 .region-footer a:hover {
-  color: #d81b60;
+  color: #e2fa33;
   text-decoration: underline;
 }
 /**
@@ -1840,6 +1942,18 @@ p {
 .stylechooser select {
   width: 100%;
 }
+/**
+ * Figure desinax module
+ */
+/**
+ * Figure with ASCIINEMA
+ */
+/**
+ * Figure with Codepen
+ */
+/** --------------------------------------------------------------
+ * Figure through .figure
+ */
 /**
  * Font Awesome.
  */
@@ -5873,15 +5987,40 @@ p {
 /**
  * My own settings, not currently in their own module.
  */
-.color-scheme {
-  overflow: auto;
+h1 {
+  border-bottom: 1px solid #111;
 }
-.color-scheme__content {
-  display: inline-block;
-  border: 1px solid #ddd;
+h2 {
+  border-bottom: 1px solid #aaa;
 }
-.color-scheme__content span {
-  float: left;
-  width: 50px;
-  height: 100px;
+h3 {
+  border-bottom: 1px solid #ddd;
+}
+h4,
+h5,
+h6 {
+  border-bottom: 1px solid #eee;
+}
+.region-footer h4 {
+  border-color: #fff;
+}
+.region-header {
+  -webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+.region-footer {
+  -webkit-box-shadow: 0 -12px 12px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 -12px 12px rgba(0, 0, 0, 0.2);
+}
+.inner-wrap-header {
+  margin-bottom: 48px;
+}
+.inner-wrap-flash {
+  margin-bottom: 36px;
+}
+.inner-wrap-breadcrumb {
+  margin-bottom: 24px;
+}
+html {
+  background: url('../image/pattern.jpg') repeat top center;
 }

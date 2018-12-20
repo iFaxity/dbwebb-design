@@ -926,6 +926,9 @@ ul.toc li.section-header {
   min-width: 650px;
   max-height: 200px;
   min-height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }
 .region-header {
   display: -webkit-box;
