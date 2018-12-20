@@ -85,3 +85,17 @@ v5.0.0 (2018-12-13)
 * Added kmom05 styles - Christian Norrman
 * Updated @desinax/figure - Christian Norrman
 * Updated changelog
+
+
+v6.0.0 (2018-12-20)
+-------------------
+* Changed flash image size
+* Added navbar items & changed default stylesheet
+* Added built theme files
+* Added publish command to makefile
+* Added designprinciper report
+* Added designprinciper report & styles
+* Added designelements report & styles
+* Added screenshots for report
+* Fixed flash image styles
+* Updated changelog
