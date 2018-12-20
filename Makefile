@@ -464,3 +464,15 @@ cimage-config-create:
 	@$(call HELPTEXT,$@)
 	$(ECHO) "$$CIMAGE_CONFIG" | bash -c 'cat > htdocs/cimage/img_config.php'
 	cat htdocs/cimage/img_config.php
+
+
+# ------------------------------------------------------------------------
+#
+# Publishing
+#
+# target: publish                 - Makes and publish theme
+.PHONY: publish
+publish:
+	@$(call HELPTEXT,$@)
+	make theme
+	dbwebb publishpure redovisa
