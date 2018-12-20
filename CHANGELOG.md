@@ -99,3 +99,8 @@ v6.0.0 (2018-12-20)
 * Added screenshots for report
 * Fixed flash image styles
 * Updated changelog
+
+v6.0.1 (2018-12-20)
+-------------------
+* Added kmom06 presentation
+* Added kmom06 presentation to navbar
