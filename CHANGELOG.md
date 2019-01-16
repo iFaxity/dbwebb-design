@@ -104,3 +104,11 @@ v6.0.1 (2018-12-20)
 -------------------
 * Added kmom06 presentation
 * Added kmom06 presentation to navbar
+
+
+v10.0.0 (2019-01-16)
+---------------------
+* Added kmom10 presentation
+* Added kmom10 presentation & report to navbar
+* Added webbplatsdesign report
+* Updated changelog
